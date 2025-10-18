@@ -1,33 +1,54 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# L-Translator - 轻量、快速、安全的本地翻译体验
 
-## Getting Started
+<!-- <div align="center">
+    <img src="assets/logo.png" alt="L-Translator Logo" width="256"/>
+</div> -->
 
-First, run the development server:
+## ✨ 特性
+
+- 🔒 **本地优先**: 使用本地 AI 模型进行翻译，保护您的隐私
+- ⚡️ **即时翻译**: 划词即译，无需等待
+- 🎯 **智能检测**: 自动识别源语言，智能选择目标语言
+- 🔊 **语音朗读**: 支持文本朗读，帮助语言学习
+- 🎨 **优雅界面**: 简洁美观的翻译卡片设计
+
+## 🚀 快速开始
+
+1. 从 Chrome 应用商店安装 L-Translator 扩展
+2. 选择任意网页文本
+3. 自动显示翻译结果，或点击工具栏图标手动触发
+
+## 💡 使用提示
+
+- 划词后自动翻译（可在设置中开启/关闭）
+- 点击音频图标收听原文发音
+- 支持手动选择源语言和目标语言
+- 可保存常用翻译结果作为生词本
+
+## 🛠️ 开发者指南
+
+本项目基于 [Plasmo](https://docs.plasmo.com/) 框架开发。
 
 ```bash
+# 安装依赖
+pnpm install
+
+# 开发模式
 pnpm dev
-# or
-npm run dev
-```
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
-
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
-
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
-
-## Making production build
-
-Run the following:
-
-```bash
+# 构建产品版本
 pnpm build
-# or
-npm run build
+
+# 打包发布
+pnpm package
 ```
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+## 📝 开源协议
 
-## Submit to the webstores
+[MIT License](LICENSE)
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+---
+
+<div align="center">
+    <sub>Made with ❤️ for language learners and translators</sub>
+</div>
