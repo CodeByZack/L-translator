@@ -1,7 +1,7 @@
 {
   "name": "local-translator",
   "displayName": "L-translator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "a chrome exstension using local ai model to translate",
   "author": "zackdk",
   "scripts": {
