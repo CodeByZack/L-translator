@@ -1,6 +1,6 @@
 {
   "name": "local-translator",
-  "displayName": "Local translator",
+  "displayName": "L-translator",
   "version": "0.0.1",
   "description": "a chrome exstension using local ai model to translate",
   "author": "zackdk",
@@ -8,7 +8,8 @@
     "dev": "plasmo dev",
     "build": "plasmo build",
     "package": "plasmo package",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "cz": "czg"
   },
   "dependencies": {
     "plasmo": "0.90.5",
@@ -22,7 +23,8 @@
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
     "prettier": "3.2.4",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "czg": "^1.12.0"
   },
   "manifest": {
     "host_permissions": [
