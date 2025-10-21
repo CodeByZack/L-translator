@@ -9,6 +9,7 @@ import {
   type TranslationMode,
   type TranslationSettings
 } from "./utils/settings";
+import React from "react";
 
 function IndexPopup() {
   const [settings, setSettings] = useState<TranslationSettings>({
@@ -156,7 +157,7 @@ function IndexPopup() {
       </div>
 
       {/* 单词本设置 */}
-      <div style={{ marginBottom: 16 }}>
+      {/* <div style={{ marginBottom: 16 }}>
         <div style={{ fontSize: 13, color: "#666", marginBottom: 8 }}>
           单词本功能
         </div>
@@ -181,7 +182,7 @@ function IndexPopup() {
             在翻译卡片中显示"加入单词本"按钮
           </div>
         )}
-      </div>
+      </div> */}
 
       <div
         style={{

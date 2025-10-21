@@ -1,5 +1,6 @@
 // 📁 src/components/TranslationCard.tsx
 import React, { useMemo } from "react";
+import Icon from "react:~/assets/icon.svg";
 
 import type { SpeechState, TextPosition, TranslationState } from "../types";
 import { supported_languages } from "../utils/lan_detector/supported_languages";
@@ -122,8 +123,22 @@ export const TranslationCard: React.FC<TranslationCardProps> = ({
                 <LoadingSpinner size={12} text="重新翻译中..." />
               )}
 
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}>
+                <Icon width={16} height={16} style={{ marginRight: 2 }} />
+                <a
+                  style={{ fontSize: 12, fontWeight: 600, color: "#333" }}
+                  href="https://github.com/CodeByZack/L-translator"
+                  target="__blank">
+                  L-Translator
+                </a>
+              </div>
+
               {/* 单词本按钮 - 移到右上角 */}
-              {vocabularyEnabled && result && (
+              {/* {vocabularyEnabled && result && (
                 <VocabularyButton
                   word={result.originText}
                   translation={result.translatedText}
@@ -131,7 +146,7 @@ export const TranslationCard: React.FC<TranslationCardProps> = ({
                   sourceLang={result.sourceLang}
                   targetLang={result.targetLang}
                 />
-              )}
+              )} */}
             </div>
           </div>
 
